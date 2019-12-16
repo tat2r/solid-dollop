@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>My New Test Page</title>
+	<link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+</head>
+<body>
+<div class="container">
+<p>{% for strt in tutorials %}
+    {{strt.street}}<br>{{strt.city}}, {{strt.state}} {{strt.zip_code}}<br><br>
+  {% endfor %}</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Jumbotron Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<p>
+		<div class="container">
+		    <div class="row">
+		      <div class="col-md-4">
+				<h2 class="display-9">Initial Intake Info</h1>
+
+					<form>
+						  First name:<br>
+							  <input type="text" name="first+name"><br>
+						  Last name:<br>
+							  <input type="text" name="last_name"><br>
+						  Phone:<br>
+							  <input type="tel" name="main_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+						  E-mail:<br>
+							  <input type="email" name="email"><br>
+					</form>
+				</h2>
+			</div>
+		</div>
+	</p>
+
+
+	<p>
+		<div class="container">
+		    <div class="row">
+		      <div class="col-md-4">
+				<h2 class="display-9">Initial Intake Info</h1>
+
+					<form>
+						  Street:<br>
+							  <input type="text" name="street"><br>
+						  City:<br>
+							  <input type="text" name="city"><br>
+						  State:<br>
+							  <input type="text" name="state"><br>
+						  Zip code:<br>
+							  <input type="text" name="zip_code:"><br>
+					</form>
+				</h2>
+			</div>
+		</div>
+</p>
+</div>
+
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+		<div class="col-md-4">
+	        <h2>Heading</h2>
+		        <p>{% for strt in tutorials %}
+				    {{strt.street}}<br>{{strt.city}}, {{strt.state}} {{strt.zip_code}}<br><br>
+					{% endfor %}</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
